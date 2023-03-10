@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class Air extends Transport {
     private double wingspan; // Размах крыльев (м)
     private int minRunwayLengths; // Минимальная длина взлетно-посадочной полосы для взлета

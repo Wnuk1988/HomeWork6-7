@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class Ground extends Transport {
     private int numberOfWheels; // Количество колес
     private double fuelConsumption; // Расход топлива (л/100км)

@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class ProgramPassengerCar {
     public static void main(String[] args) {
 

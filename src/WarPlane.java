@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class WarPlane extends Air {
     private boolean ejectionSystem; // Наличие системы катапультирования(true/false)
     private int numberOfMissiles; // Количество ракет на борту

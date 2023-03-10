@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class ProgramCivilAircraft {
     public static void main(String[] args) {
         CivilAircraft airplane = new CivilAircraft("Ty-154M",32630,935,59000,

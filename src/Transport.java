@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class Transport {
     private double power; // Мощность(в лошадиных силах)
     private int maximumSpeed; // Максимальная скорость(км/ч)

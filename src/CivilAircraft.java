@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class CivilAircraft extends Air {
     private int numberOfPassengers; // Количество пассажиров
     private boolean businessPlaces; // Наличие бизнес класса (true/false)

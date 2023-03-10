@@ -1,5 +1,3 @@
-package HomeWork5;
-
 public class FreightCar extends Ground {
     private double loadCapacity; // Грузоподемность(т)
     private double powerInKilowatts; // Мощность(кВт)

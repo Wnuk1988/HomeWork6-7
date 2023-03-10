@@ -1,5 +1,3 @@
-package HomeWork5;
-
 import java.util.Scanner;
 
 public class PassengerCar extends Ground {
