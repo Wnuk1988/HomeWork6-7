@@ -8,17 +8,18 @@ public class CivilAircraft extends Air {
         super(brand, power, maximumSpeed, weight, wingspan, minRunwayLengths);
         this.numberOfPassengers = numberOfPassengers;
         this.businessPlaces = businessPlaces;
+        this.powerInKilowatts = calculationOfPowerInKilowatts(power);
     }
 
-    public void passengerQuantity() {
-        if (numberOfPassengers <= 175) {
+    public void passengerQuantity(int passengers) {
+        if (numberOfPassengers >= passengers) {
             System.out.println("Самолет загружен.");
         } else {
             System.out.println("Вам нужен самолет побольше.");
         }
     }
-    public double calculationOfPowerInKilowatts() {
-        powerInKilowatts = getPower() * 0.74;
+    private double calculationOfPowerInKilowatts(double power) {
+        powerInKilowatts = power * 0.74;
         return powerInKilowatts;
     }
 

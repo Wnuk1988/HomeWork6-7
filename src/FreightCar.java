@@ -6,6 +6,7 @@ public class FreightCar extends Ground {
                       int numberOfWheels, double fuelConsumption, double loadCapacity) {
         super(brand, power, maximumSpeed, weight, numberOfWheels, fuelConsumption);
         this.loadCapacity = loadCapacity;
+        this.powerInKilowatts = calculationOfPowerInKilowatts(power);
     }
 
     public double getLoadCapacity() {
@@ -16,15 +17,15 @@ public class FreightCar extends Ground {
         this.loadCapacity = loadCapacity;
     }
 
-    public void cargo() {
-        if (loadCapacity <= 10) {
+    public void cargo(int clientWeight) {
+        if (loadCapacity >= clientWeight) {
             System.out.println("Грузовик загружен");
         } else {
             System.out.println("Вам нужен грузовик побольше");
         }
     }
-    public double calculationOfPowerInKilowatts() {
-        powerInKilowatts = getPower() * 0.74;
+    private double calculationOfPowerInKilowatts(double power) {
+        powerInKilowatts = power * 0.74;
         return powerInKilowatts;
     }
 

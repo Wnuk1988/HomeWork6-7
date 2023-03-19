@@ -4,7 +4,6 @@ public class ProgramWarPlane {
                 100,true,20);
         warPlane.shot();
         warPlane.ejection();
-        warPlane.calculationOfPowerInKilowatts();
         warPlane.displayInfo();
     }
 }

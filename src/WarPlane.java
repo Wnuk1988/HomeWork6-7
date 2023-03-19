@@ -9,26 +9,28 @@ public class WarPlane extends Air {
         super(brand, power, maximumSpeed, weight, wingspan, minRunwayLengths);
         this.ejectionSystem = ejectionSystem;
         this.numberOfMissiles = numberOfMissiles;
+        this.powerInKilowatts = calculationOfPowerInKilowatts(power);
     }
 
     public void shot() {
         if (numberOfMissiles > 0) {
             System.out.println("Ракета пошла!");
+            numberOfMissiles--;
         } else {
             System.out.println("Боеприпасы отсутствуют!");
         }
     }
 
     public void ejection() {
-        if (true) {
+        if (this.ejectionSystem) {
             System.out.println("Катапультирование прошло успешно!");
         } else {
             System.out.println("У Вас нет такой системы!!!");
         }
     }
 
-    public double calculationOfPowerInKilowatts() {
-        powerInKilowatts = getPower() * 0.74;
+    private double calculationOfPowerInKilowatts(double power) {
+        powerInKilowatts = power * 0.74;
         return powerInKilowatts;
     }
 
